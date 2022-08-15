@@ -29,14 +29,14 @@ export default function TextArea(props) {
       </div>
       <button
         className="btn btn-primary"
-        style={{ marginTop: "10px", marginRight:'10px' }}
+        style={{ marginTop: "10px", marginRight:'10px',marginBottom:'10px'}}
         onClick={handleOnclickUp}
       >
         Convert to uppercase
       </button>
       <button
         className="btn btn-primary"
-        style={{ marginTop: "10px", marginRight:'10px' }}
+        style={{ marginTop: "10px", marginRight:'10px', marginBottom:'10px'}}
         onClick={handleOnclickLo}
       >
         Convert to Lower case
