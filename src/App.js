@@ -5,8 +5,10 @@ import TextArea from "./Components/TextArea";
 function App() {
   return (
     <>
-      <TextArea />
-      <Navbar/>
+      <Navbar />
+      <div className="container ">
+        <TextArea heading="Enter Text to analyse" />
+      </div>
     </>
   );
 }
