@@ -5,6 +5,10 @@ export default function TextArea(props) {
     let newText=text.toUpperCase(text);
     setText(newText);
   };
+  const handleOnclickLo = () => {
+    let newText=text.toLowerCase(text);
+    setText(newText);
+  };
   const handleOnChange = (event) => {
     setText(event.target.value);
   };
@@ -25,11 +29,20 @@ export default function TextArea(props) {
       </div>
       <button
         className="btn btn-primary"
-        style={{ marginTop: "10px" }}
+        style={{ marginTop: "10px", marginRight:'10px' }}
         onClick={handleOnclickUp}
       >
-        Convetr to uppercase
+        Convert to uppercase
       </button>
+      <button
+        className="btn btn-primary"
+        style={{ marginTop: "10px", marginRight:'10px' }}
+        onClick={handleOnclickLo}
+      >
+        Convert to Lower case
+      </button>
+      <h2>Your Text Summary</h2>
+      <p><b>{text.length} characters and {text.split(" ").length} Words</b></p>
     </>
   );
 }
